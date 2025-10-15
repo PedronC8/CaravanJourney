@@ -1,0 +1,115 @@
+/* Reset Css */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "jura";
+}
+
+
+/* Fonte Jura */
+.jura {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Fonte Josefin Slabs */
+#josefin-slab {
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    color: white;
+    font-style:bold;
+    font-size: 85px;
+}
+
+
+.hero {
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('images/heropage.jpg');
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 85px;
+}
+
+
+.work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b49b2c40;
+
+}
+
+.row {
+  width: 100%;
+}
+
+.col-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;      
+}
+
+ul{
+    list-style:none;
+}
+
+
+.search-left {
+    display: flex;
+    background-image: url(images/onway.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 740px;
+    height: 515px;
+    /* padding-top: 1385px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.remotepage{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-right{
+    display: flex;
+    background-image: url(images/onroad.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 740px;
+    height: 515px;
+    justify-content: center;
+    align-items: center;
+}
+
+.explorepage{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.explorepage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b49b2c40;
+    color: black;
+
+}
