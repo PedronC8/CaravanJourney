@@ -113,3 +113,42 @@ ul{
     color: black;
 
 }
+
+
+.blogpage {
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('images/work.jpg');
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 85px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer h3 {
+  margin: 10px 0;
+}
+
+.footer .socials {
+  margin: 10px 0;
+}
+
+.footer .socials img {
+  width: 30px;
+  margin: 0 5px;
+  vertical-align: middle;
+}
