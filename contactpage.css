@@ -58,9 +58,8 @@ font-family: "Jura";
     color: white;
 }
 
-/* Seção principal */
 .contact {
-  background-image: url('images/horizons.jpg'); 
+  background-image: url('images/horizons.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -68,19 +67,54 @@ font-family: "Jura";
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-/* Card do formulário */
+/* Formulário */
 .contact-form {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
   border-radius: 25px;
   color: white;
+  padding: 20px;
+  flex: 1 1 350px;
+  min-width: 300px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contact-form button {
+  width: 100%;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #b49b2c;
+  border-color: #b49b2c;
+  color: black;
 }
 
 /* Slogan */
 .contactslogan {
-  font-family: "Jura";
+  font-family: "Jura", sans-serif;
   color: white;
+  flex: 1 1 300px;
+  min-width: 280px;
+  text-align: right;
 }
 
 .contactslogan h1 {
@@ -153,3 +187,4 @@ font-family: "Jura";
   margin: 0 5px;
   vertical-align: middle;
 }
+

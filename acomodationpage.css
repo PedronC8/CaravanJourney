@@ -162,7 +162,7 @@
 /* Ajuste para responsividade */
 @media (max-width: 768px) {
     .accom-grid .card-img {
-        height: 160px; /* Imagem um pouco menor em telas pequenas */
+        height: 160px;
     }
 }
 

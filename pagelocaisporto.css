@@ -26,6 +26,11 @@
   margin-left: auto;
 }
 
+.nav-link{
+  color: white!important;
+  font-family: "Josefin";
+}
+
 /* Caixa de Seleção */
 .localimage {
   display: flex;
