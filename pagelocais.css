@@ -44,14 +44,14 @@
 /* Ajuste Box de Seleção */
 .localimage {
   width: 100vw;
-  min-height: 100vh;              /* ocupa a janela e permite scroll se necessário */
-  display: flex;                  /* podes alinhar conteúdo facilmente */
-  align-items: flex-start;        /* ajustar conforme queres */
+  min-height: 100vh;              
+  display: flex;                  
+  align-items: flex-start;        
   justify-content: flex-start;
   background-image:
     linear-gradient(rgba(30,30,30,0.81), rgba(0,0,0,0.55)),
     url("../images/direction.jpg");
-  background-size: cover;     /* ocupa a janela toda */
+  background-size: cover;     
   justify-content: center;
 }
 

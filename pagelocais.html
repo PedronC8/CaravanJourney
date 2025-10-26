@@ -73,17 +73,17 @@
   </div>
 </section>
 
-<!-- Script para redirecionamento -->
+<!-- Script -->
 <script>
   const form = document.getElementById('localForm');
 
   form.addEventListener('submit', function(e) {
-    e.preventDefault(); // evita o envio padrão
+    e.preventDefault(); 
 
     const pais = document.getElementById('pais').value;
     const cidade = document.getElementById('cidade').value;
 
-    // Redirecionamento para páginas específicas
+    // Redirecionar à página Porto
     if(pais === 'portugal' && cidade === 'porto') {
       window.location.href = 'pagelocaisporto.html';
     } else if(pais === 'portugal' && cidade === 'lisboa') {

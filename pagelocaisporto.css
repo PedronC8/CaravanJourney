@@ -29,9 +29,9 @@
 /* Caixa de Seleção */
 .localimage {
   display: flex;
-  justify-content: space-between; /* separa a caixa da esquerda e a coluna da direita */
+  justify-content: space-between; 
   align-items: flex-start;
-  padding: 100px 120px; /* espaçamento lateral aumentado */
+  padding: 100px 120px;
   background-image: linear-gradient(rgba(30,30,30,0.81), rgba(0,0,0,0.55)), url("../images/direction.jpg");
   background-size: cover;
   background-position: center;
@@ -69,10 +69,10 @@
 .right-column {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; /* espaço entre mapa e info-box */
+  gap: 1.5rem; 
   flex: 1;
   max-width: 600px;
-  margin-right: 80px; /* afastamento da borda direita */
+  margin-right: 80px; 
 }
 
 /* Mapa */

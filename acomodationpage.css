@@ -47,8 +47,8 @@
 
 #josefin-slab-container-flex {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Preto com 60% de opacidade */
-  color: white; /* O texto fica branco e 100% opaco */
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: white; 
   padding: 20px;
 }
 
@@ -79,8 +79,6 @@
 }
 
 /* Cards Section */
-
-/* Cards */
 
 .accom-grid{
   background-color: #B49B2C40;
@@ -115,10 +113,10 @@
 
 /* Imagens dentro dos cards */
 .accom-grid .card-img {
-    width: 100%;                     /* Imagem menor que o card */
-    height: 220px;                  /* Ajusta altura */
+    width: 100%;                     
+    height: 220px;                 
     object-fit: cover;
-    border-radius: 16px;            /* Cantos arredondados da imagem */
+    border-radius: 16px;            
     display: block;
     margin-bottom: 1rem;
     object-position: center center center;     

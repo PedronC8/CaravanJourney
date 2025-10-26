@@ -30,7 +30,7 @@ font-family: "Jura";
 /* Vetor e Navbar */
 .logo {
   display: flex;
-  justify-content: space-between; /* separar logo e navbar */
+  justify-content: space-between; 
   align-items: center;
   width: 100%;
   margin-right:50px;
@@ -60,7 +60,7 @@ font-family: "Jura";
 
 /* Seção principal */
 .contact {
-  background-image: url('images/horizons.jpg'); /* coloca a tua imagem */
+  background-image: url('images/horizons.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -111,7 +111,7 @@ font-family: "Jura";
 
 
 
-/* Estilo para o formulário/card */
+/* Formulário*/
 .card {
   background-color: black !important
 
