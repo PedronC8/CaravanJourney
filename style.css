@@ -13,20 +13,52 @@ font-family: "jura";
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  size: 25px;
+  types: bold;
 }
 
 /* Fonte Josefin Slabs */
 #josefin-slab {
-    font-family: "Josefin Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    color: white;
-    font-style:bold;
-    font-size: 85px;
+  font-family: "Josefin Slab", serif;
+  font-weight: 700;
+  color: white;
+  font-size: 85px;
 }
 
 
-.hero {
+/* Botão Topo */
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100; 
+  background-color: transparent; 
+  color: white;
+  border: 2px solid white; 
+  border-radius: 50%;
+  padding: 12px 18px;
+  font-size: 20px;
+  cursor:pointer;
+  transition: all 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: black;
+  transform: translateY(-3px);
+}
+
+
+/* Navbar */
+.nav-link{
+    font-family: "Jura";
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black !important;
+}
+
+
+.titulo {
     display: flex;
     background-position: center;
     background-size: cover;
@@ -37,16 +69,99 @@ font-family: "jura";
     justify-content: center;
     text-align: center;
     font-size: 85px;
+    color: white;
+}
+.work-section {
+  position: relative;
+}
+
+.corner {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 6px solid #1a1a1a;
+}
+
+.corner.top-left {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.corner.bottom-right {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
 }
 
 
-.work{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #b49b2c40;
-
+.work-section .container {
+  display: flex;
+  gap: 60px;
+  align-items: center;
 }
+
+.work-left p {
+  font-family: 'Jura', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.work-left span {
+  color: #b49b2c; /* destaque das palavras */
+  font-weight: 700;
+}
+
+.divider {
+  width: 2px;
+  background-color: #ccc;
+  height: 200px;
+}
+
+.work-left {
+  position: relative;       
+  display: flex;            
+  flex-direction: column;   
+  justify-content: center; 
+  align-items: center;      
+  padding: 3rem;            
+  text-align: center;       
+}
+
+.work-right {
+  position: relative;       
+  display: flex;            
+  flex-direction: column;   
+  justify-content: center;  
+  align-items: center;      
+  padding: 3rem;           
+  text-align: center;       
+}
+
+.work-right h3 {
+  font-family: 'Josefin Slab', serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.remote-list {
+  display: flex;
+  gap: 40px;
+}
+
+.remote-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.remote-list li {
+  margin-bottom: 8px;
+  font-family: 'Jura', sans-serif;
+}
+
 
 .row {
   width: 100%;
@@ -115,6 +230,7 @@ ul{
 }
 
 
+/* Blog Page */
 .blogpage {
     display: flex;
     background-position: center;
@@ -127,6 +243,19 @@ ul{
     text-align: center;
     font-size: 85px;
 }
+
+.blogpage h2 {
+  display: inline-block;         
+  background-color: black;       
+  color: white;                  
+  padding: 1rem 2rem;            
+  border-radius: 25px;           
+  text-align: center;          
+  font-size: 2.5rem;    
+}
+
+
+/* Footer */
 
 .footer {
   background-color: black;

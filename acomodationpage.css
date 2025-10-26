@@ -1,0 +1,227 @@
+/* Reset Css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "jura";
+}
+ 
+ 
+/* Fonte Jura */
+.jura {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+ 
+/* Fonte Josefin Slabs */
+#josefin-slab {
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 700px;
+  color: black;
+  font-style:bold;
+  font-size: 25px;
+}
+
+ 
+
+.headertext{
+  width: 1447px;
+  height: 146px;
+  height: 50vh;
+  width: 100vw;
+  top: 539px;
+  opacity: 1;
+  display: flex;
+  background-position: 100% 38%;
+  background-size: cover;
+  background-image: url('images/caravan_sun.jpg'); 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 85px;
+  opacity: 1;
+}
+
+#josefin-slab-container-flex {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Preto com 60% de opacidade */
+  color: white; /* O texto fica branco e 100% opaco */
+  padding: 20px;
+}
+
+
+
+/* Navbar e Logo */
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 50px;
+}
+
+.logo img {
+  width: 59px;
+  height: 70px;
+}
+
+.logo .nav {
+  margin-left: auto;
+}
+
+.navbar {
+  font-family: "Josefin Slab", serif;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Cards Section */
+
+/* Cards */
+
+.accom-grid{
+  background-color: #B49B2C40;
+  display: flex;
+  justify-content: center;  
+  gap: 1rem;               
+  padding: 1rem 0;   
+}
+
+
+.accom-grid .card {
+    background: #f2f2f2;
+    border-radius: 15px;
+    overflow: visible;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+
+    width: 400px;               
+    height: 500px;                 
+    margin: 0 auto 2rem auto;      
+    display: flex;
+    flex-direction: column;
+    align-items: center;           
+    padding: 10px;      
+}
+
+
+/* Efeito hover */
+.accom-grid .card:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagens dentro dos cards */
+.accom-grid .card-img {
+    width: 100%;                     /* Imagem menor que o card */
+    height: 220px;                  /* Ajusta altura */
+    object-fit: cover;
+    border-radius: 16px;            /* Cantos arredondados da imagem */
+    display: block;
+    margin-bottom: 1rem;
+    object-position: center center center;     
+}
+
+/* Corpo do card */
+.accom-grid .card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #222;
+}
+
+/* Título do card */
+.accom-grid .card-title {
+    font-family: 'Jura', sans-serif;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Lista dentro do card */
+.accom-grid .card-text {
+    list-style-type: disc;
+    padding-left: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Botão/link do card */
+.accom-grid .card-btn {
+    text-decoration: underline;
+    color: #b49b2c;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+.accom-grid .card-btn:hover {
+    color: #7a6a1f;
+}
+
+/* Ajuste para responsividade */
+@media (max-width: 768px) {
+    .accom-grid .card-img {
+        height: 160px; /* Imagem um pouco menor em telas pequenas */
+    }
+}
+
+
+.col-12{
+  padding: 50px;
+}
+
+
+/* Modal */
+.modal-body{
+  margin: 15px;
+}
+
+.modal {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/caravan_sun.jpg"); 
+  background-size: cover;
+  background-position: center center;
+  display: block;  
+}
+
+
+/* Botão de seleção */
+.btn.btn-olive  {
+  background-color: #686931; 
+  color: black;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+
+/* Footer */
+ 
+ 
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.footer h3 {
+  margin: 10px 0;
+}
+ 
+.footer .socials {
+  margin: 10px 0;
+}
+ 
+.footer .socials img {
+  width: 30px;
+  margin: 0 5px;
+  vertical-align: middle;
+}

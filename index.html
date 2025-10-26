@@ -1,160 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Caravan Journey</title>
+<html lang="pt">
 
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caravan Journey</title>
 
-    <!-- Link Fonts Jura -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="style.css" />
 
-    <!-- Link Fonts Josefin Slabs -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet" />
 
-    <!-- Link Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+</head>
 
-  </head>
+<body>
+  <!-- Botão Voltar ao Topo -->
+  <button id="backToTop" title="Voltar ao topo">↑</button>
 
-  <body>
-    <!-- Navbar -->
-
-    <div class="container text-end position-absolute">
+  <!-- Navbar -->
+  <nav class="navbar position-absolute top-0 end-0 w-100 p-3">
+    <div class="container-fluid d-flex justify-content-end">
       <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a href="#" class="nav-link" aria-current="page">Acomodação</a>
-        </li>
-        <li class="nav-item"><a href="#" class="nav-link">Locais</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contactos</a></li>
+        <li class="nav-item"><a href="../acomodationpage.html" class="nav-link jura-link fw-semibold">ACOMODAÇÃO</a></li>
+        <li class="nav-item"><a href="../pagelocais.html" class="nav-link jura-link fw-semibold">LOCAIS</a></li>
+        <li class="nav-item"><a href="#" class="nav-link jura-link fw-semibold">BLOG</a></li>
+        <li class="nav-item"><a href="../contactpage.html" class="nav-link jura-link fw-semibold">CONTATOS</a></li>
       </ul>
     </div>
+  </nav>
 
-    <!-- Hero Page -->
-    <section name="hero"class="hero">
- 
-      <div class="container text-center">
-        <h1 id="josefin-slab">LIVING AROUND</h1>
+  <!-- Hero Page -->
+  <section class="hero d-flex align-items-center justify-content-center text-center">
+    <h1 class="titulo">LIVING AROUND</h1>
+  </section>
+
+<!-- Work Section -->
+
+<section class="work-section">
+  <div class="container d-flex justify-content-between align-items-start">
+    
+    <!-- Texto à esquerda -->
+    <div class="work-left flex-fill me-4">
+      <p>
+        Viva <span>livre</span>, trabalhe<br>
+        de qualquer lugar,<br>
+        descubra o <span>mundo</span>.
+      </p>
     </div>
-   
-    </section>
 
-        <!-- Work Page -->
-    <section name="work"class="work">
- 
-      <div class="row">
-        <div class="col-6 border-end">
-            <div class="textslogan"> <p>Viva <span>livre</span>, trabalhe <br> de qualquer lugar, <br>descubra o <span>mundo.</span></p></div>
-        </div>
+    <!-- Conteúdo à direita com cantos decorativos -->
+    <div class="work-right flex-fill position-relative ms-4 p-3">
+      <!-- cantos decorativos -->
+      <span class="corner top-left"></span>
+      <span class="corner bottom-right"></span>
 
-        <div class="col-6">
-            <div class="remotetext"> <h1>Trabalhos Remotos</h1>
-                <div class=" d-flex">
-                <ul class="me-5">
-                    <li>Indeed</li>
-                    <li>LinkedIn</li>
-                    <li>JobRemote</li>
-                    <li>GoogleJobs</li>
-
-                </ul>
-                <div>
-                    <ul>
-                    <li>Indeed</li>
-                    <li>LinkedIn</li>
-                    <li>JobRemote</li>
-                    <li>GoogleJobs</li>
-
-                    </ul>
-                    
-                </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    
-    <section>
-
-        <!-- Search Page -->
-    
-    <section name="search"class="search">
- 
-    <div class="row m-0">
-        <div class="col-5 search-left">
-            
-        </div>
-
-        <div class="remotepage col-7">
-            <div class="remotetext"> <h1>Descubra o seu novo <br> escritório</h1>
-        
-            </div>     
-
-        </div>
+      <h2>Trabalhos Remotos</h2>
+      <div class="remote-list d-flex gap-4">
+        <ul>
+          <li>Indeed</li>
+          <li>LinkedIn</li>
+          <li>JobRemote</li>
+          <li>GoogleJobs</li>
+        </ul>
+        <ul>
+          <li>Indeed</li>
+          <li>LinkedIn</li>
+          <li>JobRemote</li>
+          <li>GoogleJobs</li>
+        </ul>
+      </div>
     </div>
-    </section>
 
-
-        <section>
-
-        <!-- Explorer Page -->
-    
-    <section name="explore"class="explore">
- 
-        <div class="row m-0">
-            <div class="explorepage col-6">
-                <div class="exploretext"> <h1>Temos destinos <br> especiais para você</h1>
-                </div>
-            </div>
-
-            <div class="col-6 explore-right">
-
-            </div>     
-
-        </div>
-        
-    </section>
-
-        <!-- Blog Page -->
-    <section name="blogpage"class="blogpage">
-   
-    </section>
-
-
-
-    <!-- Footer -->
-<footer class="footer"> 
-  <h3>LIVING AROUND</h3>
-
-  <div class="socials">
-    <img src="images/face.png" alt="facebook"> 
-    <img src="images/insta.png" alt="instagram"> 
-    <img src="images/x.png" alt="x">
   </div>
-
-  <p>Power by Cesae Digital</p> 
-</footer>
+</section>
 
 
+  <!-- Search Section -->
+  <section class="search row m-0">
+    <div class="col-md-5 search-left"></div>
+    <div class="col-md-7 remotepage d-flex justify-content-center align-items-center text-center">
+      <h2>Descubra o seu novo <br> escritório</h2>
+    </div>
+  </section>
 
+  <!-- Explore Section -->
+  <section class="explore row m-0">
+    <div class="col-md-6 explorepage d-flex justify-content-center align-items-center text-center">
+      <h2>Temos destinos <br> especiais para você</h2>
+    </div>
+    <div class="col-md-6 explore-right"></div>
+  </section>
 
-    <!-- Link Bootstrap Jss -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Blog Section -->
+  <section class="blogpage d-flex justify-content-center align-items-center text-center">
+    <h2>Blog</h2>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h3>LIVING AROUND</h3>
+    <div class="socials">
+      <img src="images/face.png" alt="Ícone do Facebook">
+      <img src="images/insta.png" alt="Ícone do Instagram">
+      <img src="images/x.png" alt="Ícone do X">
+    </div>
+    <p>Powered by Cesae Digital</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <!-- Script Back to Top -->
+  <script>
+    const backToTopButton = document.getElementById("backToTop");
+
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    };
+
+    backToTopButton.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
+</body>
+
 </html>
